@@ -36,7 +36,6 @@ public class Calculator {
 		return z;
 	}
 
-	
 	private static int multiple(int x1, int x2) {
 		int z = x1 * x2;
 		return z;
