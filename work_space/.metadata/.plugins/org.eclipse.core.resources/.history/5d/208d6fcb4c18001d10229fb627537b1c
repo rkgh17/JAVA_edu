@@ -1,0 +1,52 @@
+package Exam_02;
+
+import java.util.Scanner;
+
+public class practice7 {
+
+	public static void main(String[] args) {
+
+		boolean run = true;
+		int balance = 0;
+		Scanner sc = new Scanner(System.in);
+		int a=0, b=0, c=0, d=0;
+		
+		while(run) {
+			System.out.println("\n----------------------------------");
+			System.out.println("1. 예금 | 2. 출금 | 3. 잔고 | 4. 종료");
+			System.out.println("----------------------------------");
+			System.out.print("\n선택> ");			
+			a = sc.nextInt();
+			
+			if(a==1) {
+				System.out.print("예금액> ");
+				b = sc.nextInt();
+			}
+			
+			else if(a==2) {
+				System.out.print("출금액> ");
+				c = sc.nextInt();
+				if(b - c >0) {
+					d = b - c;
+				}
+				else {
+					System.out.println("잔고가 부족합니다.");
+				}
+			}
+			
+			else if(a==3) {
+				System.out.printf("잔고>%d\n", d);
+			}
+			
+			else if(a==4) {
+				System.out.println("\n프로그램 종료");
+				break;
+			}
+			
+			else
+				System.out.println("올바르지 않은 값입니다. 다시 입력해 주십시오.");
+			
+		}
+	}
+
+}

@@ -1,0 +1,12 @@
+package Exam_02;
+
+public class practice6 {
+	public static void main(String[] args) {
+		String a = *;
+		
+		for(int i = 1 ; i<6 ; i++) {
+			System.out.printf("%s\n",a);
+			a += "*";
+		}
+	}
+}

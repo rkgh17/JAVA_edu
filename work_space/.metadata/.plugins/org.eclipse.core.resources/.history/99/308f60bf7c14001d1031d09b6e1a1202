@@ -1,0 +1,51 @@
+package Exam_01;
+
+public class Human {
+
+	public static void main(String[] args) {
+		int calc = 3+4;
+		System.out.println ("결과 = " + calc);
+		
+		int Human, human;
+		Human = 10;
+		human = 20;
+		
+		System.out.println("Human = " + Human);
+		System.out.println("human = " + human);
+		
+		int kor = 100;
+		int eng = 100;
+		int sum;
+		int avg;
+		sum = kor+eng;
+		avg = sum/2;
+		System.out.println("sum = " + sum);
+		System.out.println("avg = " + avg);
+		System.out.println("-------------------------------");
+		
+		char human1 = 'A';
+		char human2 = 65;
+		
+		System.out.println(human1);
+		System.out.println(human2);
+		System.out.println((int)human2);
+		System.out.println("-------------------------------");
+		
+		long human3 = 20;
+		long human4 = 10000000000L; // 8byte가 넘는 값은 L을 붙힘
+		System.out.println("human3 = " + human3);
+		System.out.println("human4 = " + human4);
+		
+		double human5 = 3.14159;
+		System.out.println("human5 = " + human5);
+		int human6 = (int)3.14159; // 형변환
+		System.out.println("human6 = " + human6);
+		float human7 = 3.14159f; // float은 f(or F)를 붙임
+		System.out.println("human7 = " + human7);
+		
+		boolean human8 = true;
+		System.out.println("human8 = " + human8);
+		
+	}
+	
+}

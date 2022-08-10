@@ -1,0 +1,16 @@
+package Exam_02;
+
+import java.util.Scanner;
+
+public class Examinput {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in); // ctrl + shift + o -> import 들어감
+		String name;
+		name = sc.nextLine();
+		
+		System.out.printf("이름은 %s입니다.\n", name);
+
+	}
+
+}

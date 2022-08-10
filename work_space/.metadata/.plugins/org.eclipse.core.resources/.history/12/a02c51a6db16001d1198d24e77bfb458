@@ -1,0 +1,22 @@
+package Exam_02;
+
+public class HumanWhile {
+
+	public static void main(String[] args) {
+		// 1~10까지 반복하면서 총 합을 구하는 프로그램.
+
+		int i = 1;
+		int sum = 0;
+
+		while (i <= 10) {
+			if (i % 2 == 0) {
+				sum += i;
+				i++;
+			}
+		}
+
+		System.out.printf("1부터 10의 짝수의 합은 %d 입니다.\n", sum);
+		System.out.printf("현재의 i = %d", i);
+	}
+
+}

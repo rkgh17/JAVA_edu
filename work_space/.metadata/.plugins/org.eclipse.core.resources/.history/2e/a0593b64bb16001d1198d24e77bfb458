@@ -1,0 +1,16 @@
+package Exam_02;
+
+public class Humanif {
+
+	public static void main(String[] args) {
+		int kor = 50;
+		System.out.printf("당신의 국어 점수는 %d입니다.\n", kor);
+		
+		if (kor>=60) {
+			System.out.println("합격입니다.");
+		}
+
+		System.out.println("프로그램을 종료합니다.");
+	}
+
+}

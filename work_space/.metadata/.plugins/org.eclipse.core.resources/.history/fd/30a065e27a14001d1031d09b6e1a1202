@@ -1,0 +1,33 @@
+package Exam_01;
+
+public class Human {
+
+	public static void main(String[] args) {
+		int calc = 3+4;
+		System.out.println ("결과 = " + calc);
+		
+		int Human, human;
+		Human = 10;
+		human = 20;
+		
+		System.out.println("Human = " + Human);
+		System.out.println("human = " + human);
+		
+		int kor = 100;
+		int eng = 100;
+		int sum;
+		int avg;
+		sum = kor+eng;
+		avg = sum/2;
+		System.out.println("sum = " + sum);
+		System.out.println("avg = " + avg);
+		
+		char human1 = 'A';
+		char human2 = 65;
+		
+		System.out.println(human1);
+		System.out.println(human2);
+		System.out.println((int)human2);
+	}
+	
+}

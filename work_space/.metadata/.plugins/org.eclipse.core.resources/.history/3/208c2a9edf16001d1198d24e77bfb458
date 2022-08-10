@@ -1,0 +1,15 @@
+package Exam_02;
+
+public class HumandoWhile {
+
+	public static void main(String[] args) {
+		int cnt = 0;
+		int sum = 0;
+		
+		do {
+			sum +=cnt;
+			cnt++;
+		}while(cnt<=10);
+			System.out.printf("1부터 %d까지의 합은 %d \n", cnt, sum);
+	}
+}

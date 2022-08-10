@@ -1,0 +1,13 @@
+package Exam_02;
+
+public class HumanGugudan {
+	public static void main(String[] args) {
+		int dan = 5;
+		
+		for (int cnt = 1; cnt <10 ; cnt++) {
+			Sytem.out.printf("%d X %d = %d", dan, cnt, dan * cnt );
+		}
+	}
+	
+
+}

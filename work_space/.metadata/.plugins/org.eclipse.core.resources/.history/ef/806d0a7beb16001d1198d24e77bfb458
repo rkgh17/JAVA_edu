@@ -1,0 +1,13 @@
+package Exam_02;
+
+public class Human17While99 {
+	int i = 2 ;
+	
+	while(i<10) {
+		int j = 1;
+		System.out.printf("%d x %d = %d", i, j, i*j )
+		i++;
+		j++;
+	}
+
+}
