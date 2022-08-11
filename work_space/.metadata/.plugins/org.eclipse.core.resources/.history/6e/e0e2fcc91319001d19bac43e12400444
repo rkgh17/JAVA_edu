@@ -1,0 +1,13 @@
+package Exam_04;
+
+public class Human {
+
+	public static void main(String[] args) {
+		String human1;
+		human1 = "휴면교육센터";
+		
+		String human2 = "휴면교육센터";
+		String human3 = new String("휴면교육센터");
+	}
+
+}

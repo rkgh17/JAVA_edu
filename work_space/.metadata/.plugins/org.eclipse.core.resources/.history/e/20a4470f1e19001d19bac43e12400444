@@ -1,0 +1,10 @@
+package Exam_04;
+
+public class Human03Enum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
