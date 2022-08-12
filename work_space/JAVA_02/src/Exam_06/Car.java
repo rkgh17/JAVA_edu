@@ -3,10 +3,10 @@ package Exam_06;
 public class Car {
 	
 	//필드_맴버변수
-	String company;
-	String model;
-	int maxSpeed;
-	int currentSpeed;
+	public String company;
+	public String model;
+	public int maxSpeed;
+	public int currentSpeed;
 	
 	//생성자
 	public Car() {
