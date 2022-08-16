@@ -1,4 +1,4 @@
-package Exam_13;
+package Exam_13_singleton;
 
 public class StudentExam {
 
