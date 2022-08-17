@@ -28,6 +28,8 @@ public class BankApplication {
 				withdraw();
 			else if (selectNo == 5)
 				run = false;
+			else
+				System.out.println("잘못된 입력입니다.");
 		}
 		System.out.println("프로그램 종료");
 	}
@@ -36,11 +38,11 @@ public class BankApplication {
 		System.out.println("---------");
 		System.out.println("계좌 생성");
 		System.out.println("---------");
-		System.out.print("계좌번호");
+		System.out.print("계좌번호: ");
 		String ano = scanner.next();
-		System.out.print("계좌주");
+		System.out.print("계좌주: ");
 		String owner = scanner.next();
-		System.out.print("초기입금액");
+		System.out.print("초기입금액: ");
 		int balance = scanner.nextInt();
 		if(accountArray[a]== null)
 			accountArray[a] = new Account(ano, owner, balance);
@@ -49,15 +51,16 @@ public class BankApplication {
 	}
 	
 	public static void accountList() {
+		int i = 0;
 		System.out.println("---------");
 		System.out.println("계좌 목록");
 		System.out.println("---------");
 		while(true) {
-			int n=0;
-			System.out.println("" + accountArray[n].getAno() + "\t" + accountArray[n].getOwner() + "\t" + accountArray[n].getBalance());
-			n++;
-			if(accountArray[n] == null)
+			if(accountArray[i]==null)
 				break;
+			System.out.printf("%s\t%s\t%d\n",accountArray[i].getAno(),accountArray[i].getOwner(),accountArray[i].getBalance());
+			i++;
+			
 		}
 	}
 	
@@ -66,31 +69,29 @@ public class BankApplication {
 		System.out.println("---------");
 		System.out.println("예금");
 		System.out.println("---------");
-		System.out.print("계좌번호");
+		System.out.print("계좌번호: ");
 		String findno = scanner.next();
 		a = findAccount(findno).getBalance();
-		System.out.print("예금액");
+		System.out.print("예금액: ");
 		int plus = scanner.nextInt();
 		a+=plus;
 		findAccount(findno).setBalance(a);
-		
-		
-		
+		System.out.println("결과 : 예금이 성공되었습니다.");
 	}
 
 	public static void withdraw() {
 		int a = 0;
 		System.out.println("---------");
-		System.out.println("예금");
+		System.out.println("출금");
 		System.out.println("---------");
-		System.out.print("계좌번호");
+		System.out.print("계좌번호: ");
 		String findno = scanner.next();
 		a = findAccount(findno).getBalance();
-		System.out.print("출금액");
+		System.out.print("출금액: ");
 		int minus = scanner.nextInt();
 		a-=minus;
 		findAccount(findno).setBalance(a);
-		
+		System.out.println("결과 : 출금이 성공되었습니다.");
 	}
 	
 	private static Account findAccount(String ano) {

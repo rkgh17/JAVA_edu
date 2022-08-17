@@ -12,7 +12,7 @@ public class Account {
 	}
 
 	public String getAno() {
-		return ano;
+		return this.ano;
 	}
 
 	public void setAno(String ano) {
@@ -20,7 +20,7 @@ public class Account {
 	}
 
 	public String getOwner() {
-		return owner;
+		return this.owner;
 	}
 
 	public void setOwner(String owner) {
@@ -28,7 +28,7 @@ public class Account {
 	}
 
 	public int getBalance() {
-		return balance;
+		return this.balance;
 	}
 
 	public void setBalance(int balance) {
