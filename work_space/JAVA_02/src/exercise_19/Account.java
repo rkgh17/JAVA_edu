@@ -2,12 +2,12 @@ package exercise_19;
 
 public class Account {
 	private int balance;
-	final int MIN_BALANCE = 0;
-	final int MAX_BALANCE = 1000000;
+	private final int MIN_BALANCE = 0;
+	private final int MAX_BALANCE = 1000000;
 	
 
 	public int getBalance() {
-		return balance;
+		return this.balance;
 	}
 
 	public void setBalance(int balance) {
