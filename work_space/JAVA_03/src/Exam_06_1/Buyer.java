@@ -10,24 +10,25 @@ public class Buyer {
 	}
 	
 	public void buy(Product p) {
-		if(this.money - p.price < 0) {
+		if(this.money < p.price) {
 			System.out.println("잔고가 부족합니다.");
+			return;
 		}
-		else {
-			this.money = money - p.price;
-			
-		}
+
+		this.money = money - p.price;
+		this.add(p);
+
 	}
 	
 	public void add(Product p) {
-		this.cart[this.index] = p.name;
+		this.cart[this.index] = p;
 		this.index++;		
 	}
 	
 	public void summary() {
 		System.out.print("구입한 물건의 목록 : ");
 		for(int i = 0; i<this.index ; i++) {
-			System.out.printf("%s  |  ",cart[i]);
+			System.out.printf("%s  |  ",cart[i].name);
 		}
 		System.out.println();
 		System.out.printf("사용 금액 : %d\n남은 금액 : %d\n",1000-this.money,this.money);
