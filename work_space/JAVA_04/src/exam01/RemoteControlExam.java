@@ -1,6 +1,6 @@
 package exam01;
 
-public class TvExam {
+public class RemoteControlExam {
 
 	public static void main(String[] args) {
 //		RemoteControl rc = new Tv();
