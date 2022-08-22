@@ -19,7 +19,7 @@ public class UserinfoClient {
 		
 		UserinfoDao uid = null;
 		
-		FileInputStream fis = new FileInputStream ("conf");
+		FileInputStream fis = new FileInputStream ("src/exam09/userinfo/web/conf");
 		Properties prop = new Properties();
 		prop.load(fis);
 		
@@ -27,10 +27,10 @@ public class UserinfoClient {
 		System.out.println("dbType : " + dbType);
 		
 		
-		if(dbType == "ORACLE") {
+		if(dbType.equals("ORACLE")) {
 			uid = new UserinfoOracleDao();
 		}
-		else if(dbType == "MYSQL") {
+		else if(dbType.equals("MYSQL")) {
 			uid = new UserinfoMysqlDao();
 		}
 		uid.insertUserinfo(userinfo);

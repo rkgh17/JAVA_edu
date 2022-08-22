@@ -7,19 +7,19 @@ public class UserinfoOracleDao implements UserinfoDao{
 
 	@Override
 	public void insertUserinfo(Userinfo userInfo) {
-		System.out.println("Insert Mysql : " + userInfo.getUserId());
+		System.out.println("Insert ORACLE : " + userInfo.getUserId());
 		
 	}
 
 	@Override
 	public void selectUserinfo(Userinfo userInfo) {
-		System.out.println("Select Mysql : " + userInfo.getUserId());
+		System.out.println("Select ORACLE : " + userInfo.getUserId());
 		
 	}
 
 	@Override
 	public void deleteUserinfo(Userinfo userInfo) {
-		System.out.println("Delete Mysql : " + userInfo.getUserId());
+		System.out.println("Delete ORACLE : " + userInfo.getUserId());
 		
 	}
 	
