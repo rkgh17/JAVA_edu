@@ -11,7 +11,7 @@ public class Human {
 			human1 = null;
 			human1.run(); // 오류발생
 			
-			//예외발생시 catch문으로 이동하여 실행하기 때문에 아래 두행은 실행x
+			//예외발생시 catch문으로 이동하여 실행하기 때문에 catch문이 없으면 아래 두행은 실행x
 			Human human2 = new Human();
 			human2.run();
 		}
@@ -41,6 +41,8 @@ public class Human {
 		catch(NullPointerException e) {
 			System.out.println("예외가 발생했습니다.");
 			System.out.println(e);
+			
+			//예외정보 얻기
 			e.printStackTrace();
 			System.out.println(e.getMessage());
 		}

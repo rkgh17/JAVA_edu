@@ -1,29 +1,32 @@
-package exam04;
+package exam07;
 
 public class Human {
 
 	public static void main(String[] args) {
-		// NullPointException 예외처리
 		
 		try {
 			Human human1 = new Human();
 			human1.run();
+			// case1 : NullPointException
 			human1 = null;
-			human1.run(); // 오류발생
-			
-			
+			human1.run();
 			Human human2 = new Human();
 			human2.run();
+			
+			
+			// case2 : NumberFormatException
+			String str = "a100";
+			int intStr = Integer.parseInt(str);
+			System.out.println("intStr : " + intStr);
+
 		}
 		
+		catch(NullPointerException | NumberFormatException ne) {
+			System.out.println("NullPointer 또는 NumberFormat 예외가 발생했습니다.");
+			System.out.println(ne.getMessage());
+		}
 
 		
-		catch(NullPointerException e) {
-			System.out.println("예외가 발생했습니다.");
-			System.out.println(e);
-			e.printStackTrace();
-			System.out.println(e.getMessage());
-		}
 		finally {
 			System.out.println("Finally를 실행합니다.");
 		}
