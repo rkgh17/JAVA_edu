@@ -12,8 +12,6 @@ public class Main {
 			System.out.println(e.getMessage());
 //			System.out.println("NumberFormatException 발생");
 		}
-		
-		
 		System.out.println("시스템을 종료합니다");
 
 	}

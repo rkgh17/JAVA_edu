@@ -1,4 +1,4 @@
-package exam03;
+package exam04;
 
 public class Human {
 
@@ -16,33 +16,9 @@ public class Human {
 			human2.run();
 		}
 		
-		//Runtime과 NullPointer는 Exception 하위레벨이므로 둘다 동일
-//		catch(Exception e) {
-//			System.out.println(e);
-//			System.out.println("예외가 발생했습니다.");
-//			
-//		}
-//		catch(RuntimeException e) {
-//			System.out.println(e);
-//			System.out.println("예외가 발생했습니다.");
-//			
-//		}
-//		catch(NullPointerException e) {
-//			System.out.println(e);
-//			System.out.println("예외가 발생했습니다.");
-//			
-//		}
-		
-		//오류
-//		catch(NumberFormatException e) {
-//			System.out.println(e);
-//			System.out.println("예외가 발생했습니다.");
-		
 		catch(NullPointerException e) {
 			System.out.println("예외가 발생했습니다.");
 			System.out.println(e);
-			
-			//예외정보 얻기
 			e.printStackTrace();
 			System.out.println(e.getMessage());
 		}
