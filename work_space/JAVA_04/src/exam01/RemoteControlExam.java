@@ -13,7 +13,8 @@ public class RemoteControlExam {
 		
 		RemoteControl rc = new Audio();
 		rc.turnOn();
-		rc.setMute();
+		boolean mute = false;
+		rc.setMute(mute);
 		RemoteControl.changeBatt();
 
 	}
