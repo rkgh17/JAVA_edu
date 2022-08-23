@@ -1,4 +1,4 @@
-package exam14;
+package exam16;
 
 public class SendAction implements Action{
 

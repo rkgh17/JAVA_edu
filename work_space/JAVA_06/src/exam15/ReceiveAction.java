@@ -1,4 +1,4 @@
-package exam14;
+package exam15;
 
 public class ReceiveAction implements Action{
 
