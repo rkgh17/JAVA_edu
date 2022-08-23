@@ -17,6 +17,7 @@ public class ActionExam {
 		Action action = (Action) clazz.newInstance();
 		action.execute();
 		
+		
 //		Class clazz = 
 ////				Class.forName("exam16.SendAction");
 //				Class.forName("exam16.ReceiveAction");
