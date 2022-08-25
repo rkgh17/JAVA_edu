@@ -29,6 +29,12 @@ public class SetExam {
 			String str = iter.next();
 			System.out.println(str);
 		}
+		
+		// #방법 2
+		for (String str : set) {
+			System.out.println(str);
+		}
+		
 		set.clear(); //set컬렉션 삭제
 		System.out.println(set);
 		
