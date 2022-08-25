@@ -12,7 +12,7 @@ public class Member {
 	public int hashCode() {
 		return name.hashCode() + age;
 	}
-	
+
 	public boolean equals(Object obj) {
 		if(obj instanceof Member) {
 			Member mem = (Member) obj;
