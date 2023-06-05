@@ -1,6 +1,6 @@
 package study.dataType;
 
-public class javaString {
+public class java01_String {
     public static void main(String[] args){
 
         // equals : 문자열 비교

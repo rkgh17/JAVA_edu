@@ -1,6 +1,6 @@
 package study.dataType;
 
-public class javaFormatting {
+public class java02_Formatting {
     public static void main(String[] args){
 
         // String.format : 문자열 안에 특정한 값을 바꿔야 할 경우 사용하는 기법
