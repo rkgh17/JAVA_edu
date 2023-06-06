@@ -7,8 +7,9 @@ import java.util.Vector;
 public class java05_List {
     public static void main(String[] args) {
 
-        // List는 가변형이다.
-        // 알아서 크기가 조절됨.
+        // List
+        // collection 인터페이스를 상속받은 자료형.
+        // 가변형 : 알아서 크기가 조절됨.
         // 3가지 종류가 있다.
         // 1. ArrayList
         // 2. Vector

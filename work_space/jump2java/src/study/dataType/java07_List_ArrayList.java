@@ -2,6 +2,7 @@ package study.dataType;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class java07_List_ArrayList {
     public static void main(String[] args) {
@@ -20,6 +21,12 @@ public class java07_List_ArrayList {
         String stJoin = String.join(",", pitches);
         System.out.println(stJoin); // 0,1,2
 
+        // Comparator : 정렬하기 (sort)
+        pitches2.sort(Comparator.naturalOrder());
+        System.out.println("오름차순 :"+ pitches2);
+
+        pitches2.sort(Comparator.reverseOrder());
+        System.out.println("내림차순 :"+ pitches2);
 
     }
 }
